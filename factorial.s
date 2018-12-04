@@ -14,12 +14,12 @@ factorial_efficient:
 	
 	mov r4, r0
 	
-	fin
+	fin:
 	cmp r4, #1
 	bne loop
-	mov pc, #26
+	bx lr
 
-	loop
+	loop:
 	sub r4, #1
 	mul r0, r0, r4
 	b fin
