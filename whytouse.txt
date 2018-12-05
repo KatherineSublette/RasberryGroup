@@ -1,0 +1,4 @@
+The updated factorial function uses two repositories while the default uses 4.
+Our code also does not store anything on the stack until linking the value in r0. 
+This makes it more compact from a memeory perspective as the default requires storing several calculations on the stack.
+Finally, because our program has to waste no time shifting values and pointers to and from the stack it manages to preform the task in far fewer cycles.
